@@ -56,6 +56,71 @@ Each section contains a `versions/` subdirectory for previous document versions 
 
 ---
 
+## Versioning and conventions
+
+### Versioning
+
+Documents use [semantic versioning](https://semver.org/) in both the filename and the document metadata header:
+
+```
+the-cascade-priority-v0.1.0.md
+```
+
+**New versions create new files.** Do not overwrite a previous version — copy the file, bump the version in the filename and metadata, and edit the new copy. Move the previous version into the `versions/` subdirectory within its section.
+
+- **Patch** (v0.1.0 → v0.1.1): Corrections, typos, minor clarifications that do not change the argument
+- **Minor** (v0.1.1 → v0.2.0): New sections, restructured content, expanded arguments
+- **Major** (v0.2.0 → v1.0.0): Published release or fundamental rewrite
+
+### Naming
+
+- Kebab-case filenames: `description-vX.Y.Z.md`
+- No `universal-cake--` prefix — the directory structure provides context
+- Place new documents in the appropriate directory (`articles/`, `website/`, `decks/`, etc.)
+
+### Document metadata
+
+Articles and guides use inline metadata below the title:
+
+```markdown
+# Document Title
+
+Version: 0.1.0
+Status: Draft
+License: CC BY-SA 4.0
+```
+
+Marp presentation decks use YAML frontmatter:
+
+```yaml
+---
+marp: true
+theme: default
+paginate: true
+title: "Deck Title"
+author: "Christopher Steel, Universal Cake"
+date: "2026-06-24"
+version: "0.1.0"
+status: "Draft"
+license: "CC BY-SA 4.0"
+---
+```
+
+### Style
+
+- Plain language for general audiences
+- APA 7 citations where applicable
+- AI assistance attribution in the license footer of each document
+- All documents are CC BY-SA 4.0
+
+### Committing
+
+- Draw from existing corpus material — do not introduce new claims without discussion
+- Commit messages should describe what changed and why
+- Presentation decks can be rendered with `marp` CLI or Marp for VS Code
+
+---
+
 ## Key sources
 
 - Steel, C. (2026). *Universal Cake -- An Introduction* (v0.3.2)
