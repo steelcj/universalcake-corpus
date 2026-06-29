@@ -52,7 +52,7 @@ Each section contains a `versions/` subdirectory for previous document versions 
 - **Sovereignty is a prerequisite for accessibility** — if someone else controls the platform, someone else decides who gets in
 - **The cascade priority** — sustain the people first, then open the doors, then build what they produce together
 - **The rebuildability test** — if this system disappeared tomorrow, could you recreate its essential function?
-- **Compounded digital exclusion** — when every product ignores the same 20%, the same people lose everything
+- **Compounded digital exclusion** — when every digital product ignores the same 20%, the same people lose everything, only it happens much faster
 
 ---
 
